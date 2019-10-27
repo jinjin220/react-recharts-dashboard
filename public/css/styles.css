@@ -1,0 +1,271 @@
+body {
+	color: #6a8291;
+	background-color: #f7f8fc;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.wrapper {
+	position: relative;
+	height: 100vh;
+	top: 0;
+}
+
+p {
+	font-size: .8em;
+}
+
+
+main{
+	
+}
+
+.App-header {
+  background-color: #fff;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.sidenav-container {
+	display: block;
+	position: fixed;
+	height: 100%;
+	max-height: 100%;
+	background-color: #4562ec;
+	overflow: hidden;
+	transition: all 1s;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 250px;
+	z-index: 10;
+	background-image: url(../img/dot.svg);
+}
+
+.sidenav-container.collapsed {
+	width: 60px;
+	transition: all 1s;
+}
+
+.sidenav {
+	position: relative;
+    top: 100px;
+	width: 250px;
+}
+
+.sidenav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar {
+	box-shadow: -1px 7px 60px 0px rgba(220,223,226,.7)
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #6a8291;
+	font-weight: 400;
+}
+
+.page-container {
+	position: relative;
+	height: 100%;
+	max-height: 100%;
+	float: right;
+	width: calc(100% - 250px);
+}
+
+.page-container.collapse {
+	margin-left: 60px;
+}
+
+.card {
+	border-color: #fff;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 20px 0px;
+	box-shadow: 0 6px 6px rgba(50,50,93,.05), 0 5px 15px rgba(0,0,0,.05);
+}
+
+.card.blue {
+	color: #fff;
+	border-color: #4562ec;
+	background-color: #4562ec;
+}
+
+.center-pie-data {
+	position: relative;
+	z-index: 5;
+	
+}
+
+.data-container {
+	display: flex;
+	align-items: center;
+}
+
+.card.linechart .previous-data{
+	margin-left: 40px;
+}
+
+.current-data{
+	margin-left: 14px;
+} 
+
+p.stat {
+	font-weight: 700;
+	color: #6a8291;
+	margin-top: 10px;
+	margin-bottom: -4px;
+}
+
+.stat-data {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+.stat-data.current {
+	color: #406ae2;
+}
+
+.stat-data.previous, .stat-data.gross, .stat-data.online {
+	color: #a6b4bf;
+}
+
+.gross-data, .online-data, .sold-data {
+	flex: 1;
+	text-align: center;
+}
+
+.card.pie .data-container{
+	display: flex;
+}
+
+.sidenav-container li.nav-item {
+    height: 48px;
+    line-height: 48px;
+}
+
+.sidenav-container li.nav-item:hover, .sidenav-container li.nav-item.active{
+	background-color: #2945a8;
+}
+
+.md-icon {
+	display: inline-block;
+	position: relative;
+    top: 5px;
+    left: -2px;
+	height: 24px;
+	width: 24px;
+	opacity: .8;
+	margin: 0 44px 0 20px;
+}
+
+.md-icon:hover {
+	height: 24px;
+	width: 24px;
+	opacity: 1;
+}
+
+.dropdown button {
+	color: #6a8291;
+	background-color: #fff;
+	border-color: #fff;
+}
+.avatar {
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: -4px;
+}
+.avatar img {
+	width: 100%;
+}
+
+.card-top {
+    display: flex;
+}
+
+.card.blue p{
+	padding-bottom: 0px;
+}
+
+.top-drop {
+	flex: 1;
+}
+
+.nav-top{
+	display: flex;
+	position: relative;
+	top: 0;
+	height: 200px;
+	width: 250px;
+	display: flex;
+}
+
+.brand {
+	display: flex;
+	margin: auto;
+	height: 70px;
+	width: 70px;
+	border-radius: 8px;
+	box-shadow: -1px 7px 80px 0px rgba(41,69,168,1);
+	transition: left .5s linear;
+}
+
+.brand.collapsed {
+	position: relative;
+	height: 60px;
+	width: 60px;
+	border-radius: 0px;
+	top: 0;
+	left: 0;
+	margin: 0;
+	transition: all .5s;
+}
+
+.brand svg {
+	margin: auto;
+}
+
+.nav-bottom {
+	position: absolute;
+	height: 60px;
+	bottom: 0;
+	right: 0;
+}
+
+.nav-bottom button{
+	height: 60px;
+	width: 60px;
+	background-color: #2945a8;
+	border-color: #2945a8;
+}
+
+.page-container.collapsed {
+	margin-left: 60px;
+}
+
+.main-content {
+	padding: 20px;
+}
+
+.nav-bottom .fa {
+	color: #fff;
+}
+
+.pie-center {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 40%;
+}
+.sold-data .total {
+	color: #a6b4bf;
+	font-weight: 700;
+}
+.sold-data .stat-data {
+	color: #4561ed;
+}
